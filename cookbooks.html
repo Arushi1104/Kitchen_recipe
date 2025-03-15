@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Favorites | Kitchen Recipe</title>
+    <link rel="stylesheet" href="cookbooks.css">
+    <link rel="stylesheet" href="cookbook-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar (Same as home page) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Kitchen<span>Recipe</span></h1>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search recipes, ingredients...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="my-recipes.html">My Recipes</a>
+                <a href="cookbooks.html" class="active">Cookbooks</a>
+                <a href="explore.html">Explore</a>
+            </div>
+            <div class="user-menu">
+                <button class="add-recipe-btn">Add Recipe</button>
+                <div class="user-avatar">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="User Avatar">
+                    <div class="user-dropdown">
+                        <a href="#">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Cookbook Header -->
+        <section class="cookbook-header">
+            <div class="cookbook-cover">
+                <img src="https://images.unsplash.com/photo-1556911220-bda9f7f3fe9b" alt="Italian Favorites">
+                <div class="cookbook-actions">
+                    <button class="edit-cookbook-btn"><i class="fas fa-edit"></i> Edit Cookbook</button>
+                    <button class="delete-cookbook-btn"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+            <div class="cookbook-details">
+                <div class="cookbook-info">
+                    <h1>Italian Favorites</h1>
+                    <p class="cookbook-desc">My collection of authentic Italian recipes gathered from travels and family traditions.</p>
+                    <div class="cookbook-meta">
+                        <span><i class="fas fa-book-open"></i> 12 recipes</span>
+                        <span><i class="fas fa-user"></i> Created by You</span>
+                        <span class="privacy-badge private"><i class="fas fa-lock"></i> Private</span>
+                    </div>
+                </div>
+                <div class="cookbook-controls">
+                    <button class="privacy-toggle">
+                        <i class="fas fa-lock"></i> Make Public
+                    </button>
+                    <button class="add-recipes-btn">
+                        <i class="fas fa-plus"></i> Add Recipes
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cookbook Content -->
+        <section class="cookbook-content">
+            <div class="content-header">
+                <div class="recipe-count">12 Recipes</div>
+                <div class="sort-filter">
+                    <select id="sortRecipes">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="az">A-Z</option>
+                        <option value="za">Z-A</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Recipe Grid -->
+            <div class="recipe-grid">
+                <!-- Recipe Card 1 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e" alt="Homemade Pasta">
+                        <div class="recipe-tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Dinner</span>
+                        </div>
+                        <button class="remove-recipe"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Homemade Pasta Carbonara</h3>
+                        <p class="recipe-author">By: Marco Rossi</p>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 30 mins</span>
+                            <span><i class="fas fa-fire"></i> 550 cal</span>
+                        </div>
+                        <p class="recipe-description">Authentic Italian carbonara made with fresh eggs, pancetta, and Parmesan cheese.</p>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 2 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85" alt="Margherita Pizza">
+                        <div class="recipe-tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Pizza</span>
+                        </div>
+                        <button class="remove-recipe"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Classic Margherita Pizza</h3>
+                        <p class="recipe-author">By: You</p>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 45 mins</span>
+                            <span><i class="fas fa-fire"></i> 480 cal</span>
+                        </div>
+                        <p class="recipe-description">Traditional Neapolitan pizza with San Marzano tomatoes, mozzarella, fresh basil, and olive oil.</p>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 3 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141" alt="Tiramisu">
+                        <div class="recipe-tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Dessert</span>
+                        </div>
+                        <button class="remove-recipe"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Authentic Tiramisu</h3>
+                        <p class="recipe-author">By: You</p>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 4 hrs</span>
+                            <span><i class="fas fa-fire"></i> 320 cal</span>
+                        </div>
+                        <p class="recipe-description">Classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 4 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" alt="Risotto">
+                        <div class="recipe-tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Rice</span>
+                        </div>
+                        <button class="remove-recipe"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Mushroom Risotto</h3>
+                        <p class="recipe-author">By: Elena Bianchi</p>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 40 mins</span>
+                            <span><i class="fas fa-fire"></i> 420 cal</span>
+                        </div>
+                        <p class="recipe-description">Creamy Arborio rice cooked with mushrooms, white wine, and Parmesan cheese.</p>
+                    </div>
+                </div>
+
+                <!-- More Recipe Cards... -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1622973536968-3ead9e780960" alt="Bruschetta">
+                        <div class="recipe-tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Appetizer</span>
+                        </div>
+                        <button class="remove-recipe"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Classic Bruschetta</h3>
+                        <p class="recipe-author">By: You</p>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 15 mins</span>
+                            <span><i class="fas fa-fire"></i> 180 cal</span>
+                        </div>
+                        <p class="recipe-description">Toasted bread topped with fresh tomatoes, basil, garlic, and olive oil.</p>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1605590427165-3884d6aa6731" alt="Lasagna">
+                        <div class="recipe-tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Pasta</span>
+                        </div>
+                        <button class="remove-recipe"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Classic Beef Lasagna</h3>
+                        <p class="recipe-author">By: Antonio Russo</p>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 2 hrs</span>
+                            <span><i class="fas fa-fire"></i> 620 cal</span>
+                        </div>
+                        <p class="recipe-description">Layers of pasta, rich meat sauce, bechamel, and cheese, baked to perfection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add Recipes Modal -->
+    <div class="modal" id="addRecipesModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add Recipes to Cookbook</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="search-filter-container">
+                    <input type="text" placeholder="Search your recipes..." class="modal-search">
+                    <div class="filter-options">
+                        <span class="filter active">All Recipes</span>
+                        <span class="filter">My Recipes</span>
+                        <span class="filter">Saved Recipes</span>
+                    </div>
+                </div>
+                
+                <div class="available-recipes">
+                    <!-- Recipe to add 1 -->
+                    <div class="recipe-option">
+                        <div class="recipe-option-image">
+                            <img src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9" alt="Pesto Pasta">
+                        </div>
+                        <div class="recipe-option-info">
+                            <h4>Basil Pesto Pasta</h4>
+                            <p>Pasta with fresh homemade basil pesto, pine nuts, and Parmesan cheese.</p>
+                        </div>
+                        <div class="recipe-option-actions">
+                            <button class="add-to-cookbook-btn">Add</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Recipe to add 2 -->
+                    <div class="recipe-option">
+                        <div class="recipe-option-image">
+                            <img src="https://images.unsplash.com/photo-1598866594230-a7c12756260c" alt="Minestrone Soup">
+                        </div>
+                        <div class="recipe-option-info">
+                            <h4>Minestrone Soup</h4>
+                            <p>Hearty Italian vegetable soup with beans, pasta, and vegetables in a tomato broth.</p>
+                        </div>
+                        <div class="recipe-option-actions">
+                            <button class="add-to-cookbook-btn">Add</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Recipe to add 3 -->
+                    <div class="recipe-option">
+                        <div class="recipe-option-image">
+                            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7" alt="Osso Buco">
+                        </div>
+                        <div class="recipe-option-info">
+                            <h4>Osso Buco</h4>
+                            <p>Braised veal shanks in white wine, broth, and vegetables, served with gremolata.</p>
+                        </div>
+                        <div class="recipe-option-actions">
+                            <button class="add-to-cookbook-btn">Add</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Recipe to add 4 -->
+                    <div class="recipe-option">
+                        <div class="recipe-option-image">
+                            <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d" alt="Panna Cotta">
+                        </div>
+                        <div class="recipe-option-info">
+                            <h4>Vanilla Panna Cotta</h4>
+                            <p>Silky smooth Italian dessert made with cream, vanilla, and served with berry sauce.</p>
+                        </div>
+                        <div class="recipe-option-actions">
+                            <button class="add-to-cookbook-btn">Add</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="cancel-btn">Cancel</button>
+                    <button class="save-btn">Add Selected (0)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Cookbook Modal -->
+    <div class="modal" id="editCookbookModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Edit Cookbook</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="editCookbookForm">
+                    <div class="form-group">
+                        <label for="cookbookName">Cookbook Name</label>
+                        <input type="text" id="cookbookName" value="Italian Favorites">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cookbookDescription">Description</label>
+                        <textarea id="cookbookDescription">My collection of authentic Italian recipes gathered from travels and family traditions.</textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cookbookCover">Cover Image</label>
+                        <input type="file" id="cookbookCover" accept="image/*">
+                        <div class="image-preview" id="coverPreview" style="background-image: url('https://images.unsplash.com/photo-1556911220-bda9f7f3fe9b');"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Privacy</label>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="privacyToggle" class="toggle-checkbox">
+                            <label for="privacyToggle" class="toggle-label"></label>
+                            <span id="privacyStatus">Private</span>
+                        </div>
+                        <p class="helper-text">Public cookbooks can be discovered by all users</p>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn">Cancel</button>
+                        <button type="submit" class="submit-btn">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content confirmation-content">
+            <div class="modal-header">
+                <h2>Confirm Deletion</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this cookbook? This action cannot be undone.</p>
+                <div class="confirmation-actions">
+                    <button class="cancel-btn">Cancel</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as home page) -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Kitchen<span>Recipe</span></h2>
+                <p>Discover, create, and share your culinary creations</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <a href="#">Home</a>
+                    <a href="#">Explore</a>
+                    <a href="#">My Recipes</a>
+                    <a href="#">Cookbooks</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <a href="#">Blog</a>
+                    <a href="#">Cooking Tips</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Support</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for new recipes and features</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 KitchenRecipe. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cookbooks.js"></script>
+</body>
+</html>

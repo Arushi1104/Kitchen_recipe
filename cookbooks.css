@@ -1,0 +1,378 @@
+/* Cookbook Header Styles */
+.cookbook-header {
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+}
+
+.cookbook-cover {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cookbook-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cookbook-actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.edit-cookbook-btn, .delete-cookbook-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.delete-cookbook-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+    color: var(--danger-color);
+}
+
+.edit-cookbook-btn:hover, .delete-cookbook-btn:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cookbook-details {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.cookbook-info {
+    max-width: 70%;
+}
+
+.cookbook-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cookbook-desc {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.cookbook-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.privacy-badge {
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.privacy-badge.private {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+.privacy-badge.public {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.cookbook-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.privacy-toggle, .add-recipes-btn {
+    padding: 10px 16px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: var(--transition);
+}
+
+.privacy-toggle {
+    background-color: var(--bg-light);
+    color: var(--text-color);
+}
+
+.add-recipes-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.privacy-toggle:hover {
+    background-color: var(--bg-dark);
+}
+
+.add-recipes-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* Cookbook Content Styles */
+.cookbook-content {
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.recipe-count {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.sort-filter select {
+    padding: 8px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Adjusted Recipe Card for Cookbook */
+.remove-recipe {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--danger-color);
+    font-size: 0.9rem;
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.recipe-card:hover .remove-recipe {
+    opacity: 1;
+}
+
+.remove-recipe:hover {
+    background-color: var(--danger-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Add Recipes Modal Specific Styles */
+.search-filter-container {
+    margin-bottom: 20px;
+}
+
+.modal-search {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.filter-options {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filter {
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter.active {
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: 500;
+}
+
+.filter:not(.active):hover {
+    background-color: var(--bg-light);
+}
+
+.available-recipes {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.recipe-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.recipe-option:hover {
+    background-color: var(--bg-light);
+}
+
+.recipe-option-image {
+    width: 70px;
+    height: 70px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.recipe-option-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipe-option-info {
+    flex: 1;
+}
+
+.recipe-option-info h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.recipe-option-info p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.add-to-cookbook-btn {
+    padding: 6px 15px;
+    border-radius: 50px;
+    border: 1px solid var(--secondary-color);
+    background: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.add-to-cookbook-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.recipe-option.selected {
+    background-color: rgba(78, 205, 196, 0.1);
+    border-left: 3px solid var(--secondary-color);
+}
+
+.recipe-option.selected .add-to-cookbook-btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.save-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.save-btn:hover {
+    background-color: #3db9b0;
+    transform: translateY(-2px);
+}
+
+/* Confirmation Modal */
+.confirmation-content {
+    max-width: 450px;
+}
+
+.confirmation-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.delete-btn {
+    background-color: var(--danger-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.delete-btn:hover {
+    background-color: #e64a4a;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .cookbook-info {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .cookbook-details {
+        flex-direction: column;
+    }
+    
+    .cookbook-controls {
+        width: 100%;
+    }
+    
+    .privacy-toggle, .add-recipes-btn {
+        flex: 1;
+        justify-content: center;
+    }
+}

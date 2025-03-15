@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Recipe | Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Kitchen<span>Recipe</span></h1>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search recipes, ingredients...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">My Recipes</a>
+                <a href="cookbooks.html">Cookbooks</a>
+                <a href="#">Explore</a>
+            </div>
+            <div class="user-menu">
+                <button class="add-recipe-btn">Add Recipe</button>
+                <div class="user-avatar">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="User Avatar">
+                    <div class="user-dropdown">
+                        <a href="#">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Discover, Create & Share Amazing Recipes</h1>
+                <p>Join our community of food lovers and find the perfect dish for any occasion.</p>
+                <button class="cta-button">Explore Recipes</button>
+            </div>
+        </section>
+
+        <!-- Featured Recipes Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Featured Recipes</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="recipe-grid">
+                <!-- Recipe Card 1 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Healthy Vegetable Salad">
+                        <div class="recipe-tags">
+                            <span class="tag">Vegetarian</span>
+                            <span class="tag">Healthy</span>
+                        </div>
+                        <button class="save-recipe"><i class="far fa-bookmark"></i></button>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Healthy Vegetable Salad</h3>
+                        <p class="recipe-author">By: Jessica Chen</p>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 15 mins</span>
+                            <span><i class="fas fa-fire"></i> 320 cal</span>
+                        </div>
+                        <p class="recipe-description">A refreshing vegetable salad with a tangy vinaigrette dressing, perfect for summer days.</p>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 2 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e" alt="Homemade Pasta">
+                        <div class="recipe-tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Dinner</span>
+                        </div>
+                        <button class="save-recipe"><i class="far fa-bookmark"></i></button>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Homemade Pasta Carbonara</h3>
+                        <p class="recipe-author">By: Marco Rossi</p>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 30 mins</span>
+                            <span><i class="fas fa-fire"></i> 550 cal</span>
+                        </div>
+                        <p class="recipe-description">Authentic Italian carbonara made with fresh eggs, pancetta, and Parmesan cheese.</p>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 3 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828" alt="BBQ Ribs">
+                        <div class="recipe-tags">
+                            <span class="tag">BBQ</span>
+                            <span class="tag">American</span>
+                        </div>
+                        <button class="save-recipe"><i class="far fa-bookmark"></i></button>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Slow-Cooked BBQ Ribs</h3>
+                        <p class="recipe-author">By: James Wilson</p>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 3 hrs</span>
+                            <span><i class="fas fa-fire"></i> 720 cal</span>
+                        </div>
+                        <p class="recipe-description">Fall-off-the-bone ribs with a sticky homemade BBQ sauce, perfect for weekend gatherings.</p>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 4 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1571066811602-716837d681de" alt="Berry Smoothie Bowl">
+                        <div class="recipe-tags">
+                            <span class="tag">Breakfast</span>
+                            <span class="tag">Vegan</span>
+                        </div>
+                        <button class="save-recipe"><i class="far fa-bookmark"></i></button>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Berry Smoothie Bowl</h3>
+                        <p class="recipe-author">By: Emma Lopez</p>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 10 mins</span>
+                            <span><i class="fas fa-fire"></i> 280 cal</span>
+                        </div>
+                        <p class="recipe-description">A nutritious breakfast bowl packed with berries, banana, and topped with granola and seeds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Cookbooks Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2>My Cookbooks</h2>
+                <button class="new-cookbook-btn"><i class="fas fa-plus"></i> New Cookbook</button>
+            </div>
+            <div class="cookbook-grid">
+                <!-- Cookbook 1 -->
+                <div class="cookbook-card">
+                    <div class="cookbook-preview">
+                        <div class="cookbook-preview-image">
+                            <img src="https://images.unsplash.com/photo-1556911220-bda9f7f3fe9b" alt="Italian Favorites">
+                        </div>
+                        <div class="cookbook-preview-image">
+                            <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85" alt="Italian Favorites">
+                        </div>
+                        <div class="cookbook-preview-image">
+                            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141" alt="Italian Favorites">
+                        </div>
+                    </div>
+                    <div class="cookbook-info">
+                        <h3>Italian Favorites</h3>
+                        <p><i class="fas fa-book-open"></i> 12 recipes</p>
+                        <div class="cookbook-status">
+                            <span class="private"><i class="fas fa-lock"></i> Private</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cookbook 2 -->
+                <div class="cookbook-card">
+                    <div class="cookbook-preview">
+                        <div class="cookbook-preview-image">
+                            <img src="https://images.unsplash.com/photo-1575853121743-60c24dbc7ad3" alt="Healthy Weeknight Dinners">
+                        </div>
+                        <div class="cookbook-preview-image">
+                            <img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0" alt="Healthy Weeknight Dinners">
+                        </div>
+                        <div class="cookbook-preview-image">
+                            <img src="https://images.unsplash.com/photo-1585937421612-70a008356c36" alt="Healthy Weeknight Dinners">
+                        </div>
+                    </div>
+                    <div class="cookbook-info">
+                        <h3>Healthy Weeknight Dinners</h3>
+                        <p><i class="fas fa-book-open"></i> 8 recipes</p>
+                        <div class="cookbook-status">
+                            <span class="public"><i class="fas fa-globe"></i> Public</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cookbook 3 -->
+                <div class="cookbook-card">
+                    <div class="cookbook-preview">
+                        <div class="cookbook-preview-image">
+                            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d" alt="Dessert Collection">
+                        </div>
+                        <div class="cookbook-preview-image">
+                            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814" alt="Dessert Collection">
+                        </div>
+                        <div class="cookbook-preview-image">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e" alt="Dessert Collection">
+                        </div>
+                    </div>
+                    <div class="cookbook-info">
+                        <h3>Dessert Collection</h3>
+                        <p><i class="fas fa-book-open"></i> 15 recipes</p>
+                        <div class="cookbook-status">
+                            <span class="public"><i class="fas fa-globe"></i> Public</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Cookbook Card -->
+                <div class="cookbook-card add-cookbook">
+                    <div class="add-cookbook-content">
+                        <i class="fas fa-plus-circle"></i>
+                        <p>Create New Cookbook</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Categories Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Popular Categories</h2>
+            </div>
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1" alt="Breakfast">
+                    <h3>Breakfast</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Italian">
+                    <h3>Italian</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="Vegetarian">
+                    <h3>Vegetarian</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8" alt="Desserts">
+                    <h3>Desserts</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" alt="Healthy">
+                    <h3>Healthy</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Baking">
+                    <h3>Baking</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add Recipe Modal -->
+    <div class="modal" id="addRecipeModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Recipe</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="recipeForm">
+                    <div class="form-group">
+                        <label for="recipeName">Recipe Name</label>
+                        <input type="text" id="recipeName" placeholder="Enter recipe name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="recipeDescription">Description</label>
+                        <textarea id="recipeDescription" placeholder="Write a short description"></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="prepTime">Prep Time (mins)</label>
+                            <input type="number" id="prepTime" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="cookTime">Cook Time (mins)</label>
+                            <input type="number" id="cookTime" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="servings">Servings</label>
+                            <input type="number" id="servings" min="1">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Ingredients</label>
+                        <div id="ingredientsList">
+                            <div class="ingredient-row">
+                                <input type="text" placeholder="Ingredient name">
+                                <input type="text" placeholder="Amount">
+                                <button type="button" class="remove-ingredient">-</button>
+                            </div>
+                        </div>
+                        <button type="button" id="addIngredient" class="secondary-btn">+ Add Ingredient</button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Instructions</label>
+                        <div id="instructionsList">
+                            <div class="instruction-row">
+                                <span class="step-number">1</span>
+                                <textarea placeholder="Describe this step"></textarea>
+                                <button type="button" class="remove-instruction">-</button>
+                            </div>
+                        </div>
+                        <button type="button" id="addInstruction" class="secondary-btn">+ Add Step</button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="recipeImage">Recipe Image</label>
+                        <input type="file" id="recipeImage" accept="image/*">
+                        <div class="image-preview" id="imagePreview"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Privacy</label>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="privacyToggle" class="toggle-checkbox">
+                            <label for="privacyToggle" class="toggle-label"></label>
+                            <span id="privacyStatus">Public</span>
+                        </div>
+                        <p class="helper-text">Public recipes can be discovered by all users</p>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn">Cancel</button>
+                        <button type="submit" class="submit-btn">Save Recipe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Kitchen<span>Recipe</span></h2>
+                <p>Discover, create, and share your culinary creations</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <a href="#">Home</a>
+                    <a href="#">Explore</a>
+                    <a href="#">My Recipes</a>
+                    <a href="#">Cookbooks</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <a href="#">Blog</a>
+                    <a href="#">Cooking Tips</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Support</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for new recipes and features</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 KitchenRecipe. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
